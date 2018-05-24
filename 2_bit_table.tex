@@ -1,0 +1,28 @@
+\begin{table}[ht]
+    \centering
+    \label{truth_table_2_bit}
+  \def\arraystretch{1.2}
+  \resizebox{\linewidth}{!}{  
+    $\begin{tabu}{c|c|c|c|c|c}
+        \cline{2-5}
+        & \multicolumn{4}{c|}{\text{Challenge}}                        &                                                                                                                                                               \\ \cline{2-6}
+                                   & x_2 x_1 = 0 0                     & x_2 x_1 = 0 1                     & x_2 x_1 = 1 0                     & x_2 x_1 = 1 1                     & \multicolumn{1}{||c|}{f(x_1, x_2)}                \\ \tabucline[2pt]{-}
+        \multicolumn{1}{|c|}{0000} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{0}                          \\ \hline
+        \multicolumn{1}{|c|}{0001} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{x_1 x_2}                    \\ \hline
+        \multicolumn{1}{|c|}{0010} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_1} x_2}         \\ \hline
+        \multicolumn{1}{|c|}{0011} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{x_2}                        \\ \hline
+        \multicolumn{1}{|c|}{0100} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{x_1 \overline{x_2}}         \\ \hline
+        \multicolumn{1}{|>{\columncolor[gray]{.8}}c|}{0101} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||>{\columncolor[gray]{.8}}c|}{x_1}                        \\ \hline
+        \multicolumn{1}{|c|}{0110} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{x_1 \xor x_2}               \\ \hline
+        \multicolumn{1}{|c|}{0111} & d_{11} + d_{21} < d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{x_1 + x_2}                  \\ \hline
+        \multicolumn{1}{|c|}{1000} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_1 + x_2}}       \\ \hline
+        \multicolumn{1}{|c|}{1001} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_1 \xor x_2}}    \\ \hline
+        \multicolumn{1}{|>{\columncolor[gray]{.8}}c|}{1010} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||>{\columncolor[gray]{.8}}c|}{\overline{x_1}}             \\ \hline
+        \multicolumn{1}{|c|}{1011} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} < d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_1} + x_2}       \\ \hline
+        \multicolumn{1}{|c|}{1100} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_2}}             \\ \hline
+        \multicolumn{1}{|c|}{1101} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} < d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{x_1 + \overline{x_2}}       \\ \hline
+        \multicolumn{1}{|c|}{1110} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} < d_{14} + d_{23} & \multicolumn{1}{||c|}{\overline{x_1x_2}}          \\ \hline
+        \multicolumn{1}{|c|}{1111} & d_{11} + d_{21} > d_{12} + d_{22} & d_{14} + d_{21} > d_{13} + d_{22} & d_{12} + d_{24} > d_{11} + d_{23} & d_{13} + d_{24} > d_{14} + d_{23} & \multicolumn{1}{||c|}{1}                          \\ \hline
+    \end{tabu}$ 
+    }
+\end{table}

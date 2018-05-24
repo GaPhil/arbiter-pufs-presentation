@@ -1,0 +1,13 @@
+\begin{table}[ht]
+    \centering
+    \def\arraystretch{1.2}
+    $\begin{tabu}{c|c|c|c}
+         \cline{2-3}
+         & \multicolumn{2}{c|}{\text{Challenge}}                      &                                        \\ \cline{2-4}
+                                  & x_1 = 0         & x_1 = 1         & \multicolumn{1}{||c|}{f(x_1)}          \\ \hline \tabucline[2pt]{-}
+         \multicolumn{1}{|c|}{00} & d_{11} < d_{12} & d_{13} > d_{14} & \multicolumn{1}{||c|}{0}               \\ \hline
+         \multicolumn{1}{|c|}{01} & d_{11} < d_{12} & d_{13} < d_{14} & \multicolumn{1}{||c|}{1}               \\ \hline
+         \multicolumn{1}{|c|}{10} & d_{11} > d_{12} & d_{13} < d_{14} & \multicolumn{1}{||c|}{x_1}             \\ \hline
+         \multicolumn{1}{|c|}{11} & d_{11} > d_{12} & d_{13} > d_{14} & \multicolumn{1}{||c|}{\overline{x_1}}  \\ \hline
+    \end{tabu}$
+\end{table}
