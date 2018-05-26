@@ -5,6 +5,7 @@
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
+\usepackage{wrapfig}
 
 \usemintedstyle{trac}
 
@@ -16,22 +17,69 @@
 
 \begin{document}
 
-\maketitle
+\begin{frame}[plain,t]
+    
+    \begin{wrapfigure}{r}{0.2\textwidth}
+        \begin{flushright}
+        \vspace{-2.25cm}
+        \includegraphics[width = 20mm]{figures/kth_logo.png}
+        \end{flushright}
+    \end{wrapfigure}
+    
+    \vspace{2cm}
+    
+    {\large\textbf{On Statistical Properties of\\[0.25cm]
+    Arbiter Physical Unclonable Functions}}
+    \\\rule{7.5cm}{1pt}
+    
+    \vspace{0.25cm}
+    
+    {\large\textbf{Phillip Gajland}}
+    
+    \vspace{0.5cm}
+    
+    \begin{wrapfigure}{r}{0.3\textwidth}
+        \begin{flushright}
+        \vspace{-1cm}
+        \includegraphics[width = 40mm]{figures/switch_block_detailed.pdf}
+        \end{flushright}
+    \end{wrapfigure}
+    
+    {\normalsize
+    \begin{tabular}{ r l }
+    Examiner: & Prof. Dr. Elena Dubrova\\
+    Supervisor: & Dr. Felipe Marranghello
+    \end{tabular}}
+    
+    \vspace{1cm}
+    
+    \textbf{May 28\textsuperscript{th} 2018}
 
-\begin{frame}{content}
+\end{frame}
+
+\begin{frame}{Content}
     \tableofcontents
 \end{frame}
 
+\begin{frame}{Problem}
+    \begin{itemize}
+        \item unique device identifiers
+        \item secure key storage
+        \item intelectual property theft
+        \item Xilinx Zynq Ultrascale+ 
+        \item Altera Stratix 10 FPGAs
+    \end{itemize}
+\end{frame}
 
-\begin{frame}[fragile]
-  \frametitle{problem}
 
-  Intellectual Property theft 
-  
-  \begin{itemize}
-      \item Unique Device Identifiers
-      \item Secure key storage
-  \end{itemize}
+
+\begin{frame}{Boolean Functions}
+    
+\end{frame}
+
+
+\begin{frame}{Physical Unclonable Functions}
+    
 \end{frame}
 
 \section{Abiter PUFs}
@@ -153,6 +201,16 @@
         -\Delta_{11-12} < \Delta_{13-14} \neq \Delta_{13-14} < -\Delta_{11-12}
     \end{equation}
 \end{frame}
+
+
+% remove deltas no need - no need for working
+% how can we solve this problem?
+% introduce xor pufs
+% how is the simulation done?
+% explain the process of the simulation
+% conclusion we show the distribution is not uniform 
+% potential weekness, xoring can improve it.
+
 
 
 \section{Results}
