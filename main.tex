@@ -247,7 +247,7 @@
         
         \vspace{0.5cm}
         
-        Hence, $\mathbf{f(x_1, x_2) = x_1}$ can NOT be induced by a single Arbiter PUF!
+        Hence, $\mathbf{f(x_1, x_2) = x_1}$ can NOT be induced by a single arbiter PUF!
     \end{center}
 \end{frame}
 
@@ -262,7 +262,7 @@
 \end{frame}
 
 \begin{frame}{Example}
-    Two functions that can be induced by a single Arbiter PUF:
+    Two functions that can be induced by a single arbiter PUF:
 
         \[\mathbf{f(x_1, x_2) = x_1 \xor x_2}\]
     
@@ -303,13 +303,19 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Goal}
+    \begin{center}
+        \LARGE\textbf{We want uniform distribution!}
+    \end{center}
+\end{frame}
+
 \section{Results}
 
 % ----------
 % SINGLE PUF
 % ----------
 
-\begin{frame}{results}
+\begin{frame}{Results}
     \begin{figure}
         \centering
         \includegraphics[width=0.7\textwidth]{figures/puf_1.pdf}
@@ -317,28 +323,28 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{single arbiter puf}
+\begin{frame}{Single Arbiter PUF}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_1-variable_boolean_functions_induced_by_1_single_puf.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{single arbiter puf}
+\begin{frame}{Single Arbiter PUF}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_2-variable_boolean_functions_induced_by_1_single_puf.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{single arbiter puf}
+\begin{frame}{Single Arbiter PUF}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_3-variable_boolean_functions_induced_by_1_single_puf.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{single arbiter puf}
+\begin{frame}{Single Arbiter PUF}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_4-variable_boolean_functions_induced_by_1_single_puf.png}
@@ -346,10 +352,10 @@
 \end{frame}
 
 % --------------
-% TWO PUFs XORed
+% TWO XORed PUFs
 % --------------
 
-\begin{frame}{results}
+\begin{frame}{Results}
     \begin{figure}
         \centering
         \includegraphics[width=0.7\textwidth]{figures/puf_2_xor.pdf}
@@ -357,39 +363,39 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{two xored pufs}
+\begin{frame}{Two XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_1-variable_boolean_functions_induced_by_2_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{two xored pufs}
+\begin{frame}{Two XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_2-variable_boolean_functions_induced_by_2_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{two xored pufs}
+\begin{frame}{Two XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_3-variable_boolean_functions_induced_by_2_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{two xored pufs}
+\begin{frame}{Two XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_4-variable_boolean_functions_induced_by_2_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-% --------------
-% THREE PUFs XORed
-% --------------
+% ----------------
+% THREE XORed PUFs 
+% ----------------
 
-\begin{frame}{results}
+\begin{frame}{Results}
     \begin{figure}
         \centering
         \includegraphics[width=0.7\textwidth]{figures/puf_3_xor.pdf}
@@ -397,28 +403,28 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{three xored pufs}
+\begin{frame}{Three XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_1-variable_boolean_functions_induced_by_3_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{three xored pufs}
+\begin{frame}{Three XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_2-variable_boolean_functions_induced_by_3_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{three xored pufs}
+\begin{frame}{Three XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_3-variable_boolean_functions_induced_by_3_xored_pufs.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{three xored pufs}
+\begin{frame}{Three XORed PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/dist/distribution_of_4-variable_boolean_functions_induced_by_3_xored_pufs.png}
@@ -434,12 +440,9 @@
     \end{figure}
 \end{frame}
 
-
-
 \begin{frame}{Overview}
-
     \begin{table}[H]
-    \caption{Function Overview}
+    \caption{Number of Impossible Functions}
     \label{function_overview}    
     \def\arraystretch{1.45}
         \begin{subtable}{0.40\textwidth}
@@ -489,8 +492,7 @@
     \end{table}
 \end{frame}
 
-
-\begin{frame}{Frame Title}
+\begin{frame}{Impossible Functions}
     \begin{table}[H]
         \centering
         \begin{tabular}{r l}
@@ -513,21 +515,17 @@
     \end{table}  
 \end{frame}
 
-
 \begin{frame}{hypothesis}
     \begin{center}
-        $n$ XORed arbiter PUFs are needed in order to induce all ${2^2}^n$\\$n$-variable Boolean functions.
+        \LARGE\textbf{$\mathbf{n}$ XORed arbiter PUFs can induce all $\mathbf{{2^2}^n}$\\$\mathbf{n}$-variable Boolean functions.}
     \end{center}
 \end{frame}
-
-
-
 
 \begin{frame}{hypothesis}
     \begin{figure}
         \centering
         \includegraphics[width=0.6\textwidth]{figures/puf_n_xor.pdf}
-        \caption{$n$ XORed PUFs to induce all possible $n$-variable functions}
+        \caption{$n$ XORed PUFs can induce all possible $n$-variable functions.}
     \end{figure}
 \end{frame}
 
