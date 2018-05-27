@@ -6,19 +6,13 @@
 \usepackage[scale=2]{ccicons}
 \usepackage{minted}
 \usepackage{wrapfig}
-
+\usepackage{enumitem}
 \usemintedstyle{trac}
-
-\title{}
-\subtitle{On Statistical Properties of\\Arbiter Physical Unclonable Function}
-\date{\today}
-\author{Phillip Gajland}
-\institute{KTH Royal Institute of Technology}
+\usepackage{float}
 
 \begin{document}
 
 \begin{frame}[plain,t]
-    
     \begin{wrapfigure}{r}{0.2\textwidth}
         \begin{flushright}
         \vspace{-2.25cm}
@@ -32,59 +26,105 @@
     Arbiter Physical Unclonable Functions}}
     \\\rule{7.5cm}{1pt}
     
-    \vspace{0.25cm}
-    
-    {\large\textbf{Phillip Gajland}}
-    
     \vspace{0.5cm}
     
+    {\large\textbf{Phillip Gajland}}
+    \vspace{0.5cm}
     \begin{wrapfigure}{r}{0.3\textwidth}
         \begin{flushright}
-        \vspace{-1cm}
+        \vspace{-2cm}
         \includegraphics[width = 40mm]{figures/switch_block_detailed.pdf}
         \end{flushright}
     \end{wrapfigure}
+    
+    \vspace{1cm}
     
     {\normalsize
     \begin{tabular}{ r l }
     Examiner: & Prof. Dr. Elena Dubrova\\
     Supervisor: & Dr. Felipe Marranghello
     \end{tabular}}
-    
-    \vspace{1cm}
-    
-    \textbf{May 28\textsuperscript{th} 2018}
-
 \end{frame}
 
-\begin{frame}{Content}
-    \tableofcontents
-\end{frame}
-
-\begin{frame}{Problem}
-    \begin{itemize}
-        \item unique device identifiers
-        \item secure key storage
-        \item intelectual property theft
-        \item Xilinx Zynq Ultrascale+ 
-        \item Altera Stratix 10 FPGAs
+\begin{frame}{Today}
+    TODO TODO TODO
+    \begin{itemize}[itemsep=0.5cm]
+        \item \textbf{Problem} - Why should you care?
+        \item \textbf{Arbiter PUFs} - What are they?
+        \item \textbf{Results} - What did we find?
+        \item \textbf{Summary} - In short?
+        \item \textbf{Conclusion} - And what?
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Motivation}
+    \begin{center}
+        \LARGE\textbf{50 billion IoT devices by 2020}
+    \end{center}
+\end{frame}
 
+\section{Problem}
+
+\begin{frame}{Problem}
+
+    \begin{itemize}[itemsep=0.5cm]
+        \item \textbf{50 billion IoT devices by 2020:}
+        \begin{itemize}
+            \item DDoS attacks e.g. Dyn cyberattack 2016
+        \end{itemize}
+        \item \textbf{Intellectual property theft:} 
+        \begin{itemize}
+            \item Unique device identifiers
+            \item Secure key storage (not battery backed SRAM or eFuses)
+        \end{itemize}
+        \item \textbf{Devices using PUFs:}
+        \begin{itemize}
+            \item Xilinx Zynq Ultrascale+ 
+            \item Altera Stratix 10 FPGAs
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Problem}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figures/fpga.jpeg}
+        \caption{Altera Stratix 10 FPGA}
+    \end{figure}
+\end{frame}
+
+\section{Background}
 
 \begin{frame}{Boolean Functions}
-    
+    \begin{table}[H]
+        \centering
+        \caption{There are ${2^2}^n$ different $n$-variable Boolean functions.}
+        \def\arraystretch{1.5}
+        \begin{tabular}{|c|l|}
+        \hline
+        No. of variables ($n$)  & Number of different functions ($f$)                                               \\ \hline
+        1                       & 4 ($0, 1, x, \overline{x}$)	                                                    \\ \hline
+        2                       & 16 ($0, 1, x_1, x_2, \overline{x_1}, \overline{x_2}, x_1 \xor x_2$, etc)          \\ \hline
+        3                       & 256 ($0, 1, x_1, x_3, \overline{x_1}, \overline{x_2}, x_2 \xor x_3$, etc)         \\ \hline
+        4                       & 65,536 ($0, 1, x_1, x_4, \overline{x_1}, \overline{x_2}, x_3 \xor x_4$, etc)      \\ \hline
+        \vdots                  & \vdots                                                                            \\ \hline
+        $n$                     & ${2^2}^n$ ($0, 1, x_1, x_n, \overline{x_1}, \overline{x_2}, x_3 \xor x_n$, etc)   \\ \hline
+        \end{tabular}
+    \end{table}
 \end{frame}
-
 
 \begin{frame}{Physical Unclonable Functions}
-    
+    \begin{itemize}[itemsep=0.5cm]
+        \item \textbf{Digital fingerprint} for Integrated circuits
+        \item \textbf{Manufacturing differences} give rise to a race condition
+        \item \textbf{Mapping} between \textit{challenges} and \textit{responses}
+        \item \textbf{Challenge Response Pair (CRP)} can be evaluated in the form of a \textbf{Boolean Function}
+    \end{itemize}
 \end{frame}
 
-\section{Abiter PUFs}
+\section{Abiter PUFs} % yes or no?
 
-\begin{frame}{switch block}
+\begin{frame}{Switch Block}
     \begin{figure}
         \centering
         \includegraphics[width=0.6\textwidth]{figures/switch_block_detailed.pdf}
@@ -92,8 +132,7 @@
     \end{figure}
 \end{frame}
 
-
-\begin{frame}{Abiter PUFs}
+\begin{frame}{Arbiter PUFs}
     \begin{figure}[ht]
         \centering
         \begin{subfigure}[b]{0.58\textwidth}
@@ -108,8 +147,7 @@
     \end{figure}
 \end{frame}
 
-
-\begin{frame}{Abiter PUFs}
+\begin{frame}{Arbiter PUFs}
     \begin{figure}
         \centering
         \includegraphics[width=\textwidth]{figures/multiple_switch_blocks.pdf}
@@ -117,52 +155,91 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Previous Studies}
-	\begin{itemize}
-		\item Machine Learning attacks
-        \item Stability
-	\end{itemize}
-\end{frame}
+\section{Example}
 
+% \begin{frame}{Previous Studies}
+% 	\begin{itemize}
+% 		\item Machine Learning attacks
+%         \item Stability
+% 	\end{itemize}
+% \end{frame}
 
-\begin{frame}{Functions}
+\begin{frame}{Example}
+    % \vspace*{-0.5cm}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        $d_{11}$ = 1.1 ns & $d_{13}$ = 1.0 ns & $d_{21}$ = 1.2 ns & $d_{23}$ = 0.8 ns\\
+        $d_{12}$ = 1.3 ns & $d_{14}$ = 1.5 ns & $d_{22}$ = 1.4 ns & $d_{24}$ = 0.9 ns\\
+        \end{tabular}
+    \end{table}
+    % \vspace{-0.5cm}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{figures/2_switch_blocks_paths.pdf}
-        \caption{Arbiter PUF paths}
+        \includegraphics[width=\textwidth]{figures/2_switch_blocks_paths.pdf}
+        \caption{Delay Paths}
     \end{figure}
 \end{frame}
 
+\begin{frame}{Example}
+    \vspace*{-0.25cm}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{cccc}
+        $d_{11}$ = 1.1 ns & $d_{13}$ = 1.0 ns & $d_{21}$ = 1.2 ns & $d_{23}$ = 0.8 ns\\
+        $d_{12}$ = 1.3 ns & $d_{14}$ = 1.5 ns & $d_{22}$ = 1.4 ns & $d_{24}$ = 0.9 ns\\
+        \end{tabular}
+    \end{table}
+    \vspace{-0.5cm}
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{figures/2_switch_blocks_paths.pdf}
+    \end{figure}
+
+    \begin{wrapfigure}{r}{0.2\textwidth}
+        \begin{flushright}
+        \vspace{-1cm}
+        \input{tables/truth_table.tex}
+        \end{flushright}
+    \end{wrapfigure}
+    
+    \vspace{-0.5cm}
+    
+    $(x_1,x_2) = (0,0) : d_{11}+d_{21} < d_{12}+d_{22} \to 0$
+        
+    $(x_1,x_2) = (0,1) : d_{12}+d_{24} > d_{11}+d_{23} \to 1$
+        
+    $(x_1,x_2) = (1,0) : d_{14}+d_{21} > d_{13}+d_{22} \to 1$
+        
+    $(x_1,x_2) = (1,1) : d_{13}+d_{24} > d_{14}+d_{23} \to 0$
+    
+    \vspace{0.5cm}
+    
+     The Boolean function induced by the PUF is $\mathbf{f(x_1, x_2) = x_1 \xor x_2}$, where "$\xor$" denotes XOR.
+
+\end{frame}
 
 \begin{frame}{table}
-
   \input{tables/1_bit_table.tex}
-  
 \end{frame}
 
 
 \begin{frame}{table}
-
     \begin{center}
         Deltas instead of absolute values
     \end{center}
     \[ \Delta_{mj-nk} = d_{mj} - d_{nk} \]
-
 \end{frame}
 
 
 \begin{frame}{table}
-
   \input{tables/1_bit_table_delta.tex}
-  
 \end{frame}
 
 
-\begin{frame}[fragile]
-  \frametitle{truth table}
-  
+\begin{frame}{Truth Table}
   \input{tables/2_bit_table.tex}
-  
 \end{frame}
 
 
@@ -335,9 +412,9 @@
     \end{figure}
 \end{frame}
 
-\section{summary}
+\section{Summary}
 
-\begin{frame}{summary}
+\begin{frame}{Summary}
     \begin{figure}
         \centering
         \includegraphics[width=0.9\textwidth]{figures/hist.png}
@@ -346,7 +423,7 @@
 
 
 
-\begin{frame}{overview}
+\begin{frame}{Overview}
 
     \begin{table}[H]
     \caption{Function Overview}
@@ -441,7 +518,7 @@
     \end{figure}
 \end{frame}
 
-\section{conclusion}
+\section{Conclusion}
 
 \begin{frame}{future work}
     \begin{figure}
