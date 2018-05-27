@@ -57,16 +57,15 @@
     \end{itemize}
 \end{frame}
 
+\section{Motivation}
+
 \begin{frame}{Motivation}
     \begin{center}
         \LARGE\textbf{50 billion IoT devices by 2020}
     \end{center}
 \end{frame}
 
-\section{Problem}
-
-\begin{frame}{Problem}
-
+\begin{frame}{Motivation}
     \begin{itemize}[itemsep=0.5cm]
         \item \textbf{50 billion IoT devices by 2020:}
         \begin{itemize}
@@ -217,26 +216,11 @@
     \vspace{0.5cm}
     
      The Boolean function induced by the PUF is $\mathbf{f(x_1, x_2) = x_1 \xor x_2}$, where "$\xor$" denotes XOR.
-
 \end{frame}
 
-\begin{frame}{table}
+\begin{frame}{Truth Table}
   \input{tables/1_bit_table.tex}
 \end{frame}
-
-
-\begin{frame}{table}
-    \begin{center}
-        Deltas instead of absolute values
-    \end{center}
-    \[ \Delta_{mj-nk} = d_{mj} - d_{nk} \]
-\end{frame}
-
-
-\begin{frame}{table}
-  \input{tables/1_bit_table_delta.tex}
-\end{frame}
-
 
 \begin{frame}{Truth Table}
   \input{tables/2_bit_table.tex}
@@ -244,39 +228,55 @@
 
 
 \begin{frame}{proof of conflict}
-    \begin{tabular}{c c c}
-        $\begin{cases} 
-        d_{11} + d_{21} < d_{12} + d_{22}\\
-        d_{14} + d_{21} > d_{13} + d_{22}\\
-        d_{12} + d_{24} < d_{11} + d_{23}\\
-        d_{13} + d_{24} > d_{14} + d_{23}
-        \end{cases}$ 
-        & $\implies$ &
-        $\begin{cases} 
-        &\Delta_{11-12} < -\Delta_{21-22}\\
-        &\Delta_{21-22} > \Delta_{13-14}\\
-        -&\Delta_{11-12} < \Delta_{23-24}\\
-        &\Delta_{13-14} > \Delta_{23-24}
-        \end{cases}$
-    \end{tabular}
+    \begin{center}
+        For $\mathbf{f(x_1, x_2) = x_1}$
+        
+        \vspace{0,5cm}
+    
+        $d_{11} + d_{21} < d_{12} + d_{22}$
+        
+        $d_{14} + d_{21} > d_{13} + d_{22}$
+        
+        $d_{12} + d_{24} < d_{11} + d_{23}$
+        
+        $d_{13} + d_{24} > d_{14} + d_{23}$
+        
+        \vspace{0.5cm}
+
+        $-\Delta_{11-12} < \Delta_{13-14} < -\Delta_{11-12}$
+        
+        \vspace{0.5cm}
+        
+        Hence, $\mathbf{f(x_1, x_2) = x_1}$ can NOT be induced by a single Arbiter PUF!
+    \end{center}
 \end{frame}
 
-\begin{frame}{proof of conflict}
-    \begin{align*}
-        -\Delta_{11-12} &< \Delta_{23-24} \text{ and } \Delta_{13-14} > \Delta_{23-24}\\
-        -\Delta_{11-12} &< \Delta_{23-24} < \Delta_{13-14}\\
-        -\Delta_{11-12} &< \Delta_{13-14}
-    \end{align*}
-    \begin{align*}
-        \Delta_{11-12} &< -\Delta_{21-22} \text{ and } \Delta_{21-22} > \Delta_{13-14}\\
-        -\Delta_{11-12} &> \Delta_{21-22} \text{ and } \Delta_{21-22} > \Delta_{13-14}\\
-        \Delta_{13-14} &< \Delta_{21-22} < -\Delta_{11-12}\\
-        \Delta_{13-14} &< -\Delta_{11-12}
-    \end{align*}
+\section{Solution}
+
+\begin{frame}{XORed PUFs}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\textwidth]{figures/puf_2_xor.pdf}
+        \caption{Setup for two XORed arbiter PUFs}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Example}
+    Two functions that can be induced by a single Arbiter PUF:
+
+        \[\mathbf{f(x_1, x_2) = x_1 \xor x_2}\]
     
-    \begin{equation} \label{eqation}
-        -\Delta_{11-12} < \Delta_{13-14} \neq \Delta_{13-14} < -\Delta_{11-12}
-    \end{equation}
+        \[\mathbf{f(x_1, x_2) = x_2}\]
+        
+        \vspace{0.5cm}
+        
+        \[(x_1 \xor x_2) \xor x_2 = x_1 \xor x_2 \xor x_1 = \mathbf{x_1}\]
+        
+        \vspace{1cm}
+        
+        \begin{center}
+            \large\textbf{``Et Voilà!"}
+        \end{center}
 \end{frame}
 
 
@@ -289,6 +289,19 @@
 % potential weekness, xoring can improve it.
 
 
+\section{Simulation}
+
+\begin{frame}{Simulation}
+    
+    \begin{itemize}[itemsep=0.5cm]
+        \item 1. Select \textbf{n} and \textbf{number of trials}
+        \item 2. For each trial:
+        \begin{itemize}[itemsep=0.25cm]
+            \item • Assign random values to the delays (Gaussian Distribution)
+            \item • Evaluate the resulting truth table
+        \end{itemize}
+    \end{itemize}
+\end{frame}
 
 \section{Results}
 
