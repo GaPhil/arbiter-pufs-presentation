@@ -1,5 +1,10 @@
 ## On Statistical Properties of Arbiter Physical Unclonable Functions - presentation
 
+### Content
+- Presentation Preview
+- Report Abstract
+- Report Link
+
 ### Preview
 
 <p>
@@ -128,3 +133,7 @@ We also evaluate alternate PUF designs, improving the coverage vastly, resulting
 **Keywords:** PUF, Boolean function, function distribution, arbiter path, digital fingerprint, secure key storage, cryptography, system security, hardware security.
 
 **Phillip Gajland (Stockholm, 2018)**</br>*On Statistical Properties of Arbiter Physical Unclonable Functions*
+
+### Report
+
+[On_Statistical_Properties_of_Arbiter_PUFs_report.pdf](https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/On_Statistical_Properties_of_Arbiter_PUFs_report.pdf)
