@@ -7,28 +7,27 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-01.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-02.png" width="280">
 </kbd> 
-  
+<br/>
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-03.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-04.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-05.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-06.png" width="280">
 </kbd> 
-  
+<br/>
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-07.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-08.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-09.png" width="280">
 </kbd> 
-  
+<br/>
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-10.png" width="280">
-  
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-11.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-12.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-13.png" width="280">
 </kbd> 
-  
+<br/>
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-14.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-15.png" width="280">
@@ -42,6 +41,9 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-23.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-24.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-25.png" width="280">
+</kbd> 
+<br />
+<kbd>
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-26.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-27.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-28.png" width="280">
@@ -53,7 +55,7 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-34.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-35.png" width="280">
 </kbd> 
-  
+<br />
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-36.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-37.png" width="280">
@@ -65,7 +67,7 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-43.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-44.png" width="280">
 </kbd> 
-  
+<br />
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-45.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-46.png" width="280">
@@ -77,7 +79,7 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-52.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-53.png" width="280">
 </kbd> 
-  
+<br />
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-54.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-55.png" width="280">
@@ -86,7 +88,7 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-58.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-59.png" width="280">
 </kbd> 
-  
+<br />
 <kbd> 
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-60.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-61.png" width="280">
@@ -94,7 +96,6 @@
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-63.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-64.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-65.png" width="280">
-
 </kbd>
 </p>
 
