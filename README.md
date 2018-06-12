@@ -2,7 +2,7 @@
 
 ### Preview
 
-<p align="center">
+<p>
 <kbd>
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-01.png" width="280">
 <img src="https://github.com/GaPhil/arbiter-pufs-presentation/blob/master/pics/On_Statistical_Properties_of_Arbiter_PUFs_presentation-02.png" width="280">
