@@ -108,8 +108,6 @@
 </kbd>
 </p>
 
-
-
 ### Abstract
 
 The growing interest in the Internet of Things (IoT) has led to predictions claiming that by 2020 we can expect to be surrounded by 50 billion Internet connected devices.
